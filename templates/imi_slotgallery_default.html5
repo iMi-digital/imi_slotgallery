@@ -1,0 +1,18 @@
+<ul>
+<?php foreach ($this->slots as $objImg): ?>
+	<?php if ($objImg->addImage): ?>
+  	<li class="<?php echo $objImg->class; ?>">
+  		<figure class="image_container"<?php if ($objImg->margin): ?> style="<?php echo $objImg->margin; ?>"<?php endif; ?>>
+			<?php if ($objImg->href): ?>
+    		<a href="<?php echo $objImg->href; ?>"<?php echo $objImg->attributes; ?> title="<?php echo $objImg->alt; ?>"><img src="<?php echo $objImg->src; ?>"<?php echo $objImg->imgSize; ?> alt="<?php echo $objImg->alt; ?>"></a>
+			<?php else: ?>
+    		<img src="<?php echo $objImg->src; ?>"<?php echo $objImg->imgSize; ?> alt="<?php echo $objImg->alt; ?>">
+			<?php endif; ?>
+			<?php if ($objImg->caption): ?>
+    		<figcaption class="caption" style="width:<?php echo $objImg->arrSize[0]; ?>px"><?php echo $objImg->caption; ?></figcaption>
+			<?php endif; ?>
+  		</figure>
+  	</li>
+	<?php endif; ?>
+<?php endforeach; ?>
+</ul>
