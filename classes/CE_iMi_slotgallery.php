@@ -7,6 +7,7 @@
   * @license    commercial
   */
 
+namespace iMi\SlotGallery;
 
 /**
  * Class CE_iMi_slotgallery
