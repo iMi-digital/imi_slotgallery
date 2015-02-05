@@ -1,14 +1,13 @@
 /* slot widget */
-td.mcwUpdateFields:nth-of-type(1) {
+#ctrl_imi_slots td.mcwUpdateFields:nth-of-type(1) {
 	width: 245px;
-} 
-td.mcwUpdateFields:nth-of-type(2) {
+}
+#ctrl_imi_slots td.mcwUpdateFields:nth-of-type(2) {
 	width: 285px;
-} 
-td.mcwUpdateFields:nth-of-type(3) {
+}
+#ctrl_imi_slots td.mcwUpdateFields:nth-of-type(3) {
 	width: 85px;
-} 
-
+}
 
 /* image size widget */
 .tl_text_4 {
